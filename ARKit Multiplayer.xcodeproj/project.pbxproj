@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A5020A1FA89235009FE129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A502091FA89235009FE129 /* AppDelegate.swift */; };
+		08A5020C1FA89235009FE129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5020B1FA89235009FE129 /* ViewController.swift */; };
+		08A5020F1FA89235009FE129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A5020D1FA89235009FE129 /* Main.storyboard */; };
+		08A502111FA89235009FE129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A502101FA89235009FE129 /* Assets.xcassets */; };
+		08A502141FA89235009FE129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A502121FA89235009FE129 /* LaunchScreen.storyboard */; };
+		08A5021F1FA89235009FE129 /* ARKit_MultiplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5021E1FA89235009FE129 /* ARKit_MultiplayerTests.swift */; };
+		08A5022A1FA89235009FE129 /* ARKit_MultiplayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A502291FA89235009FE129 /* ARKit_MultiplayerUITests.swift */; };
+		08A502381FA8926A009FE129 /* MultiplayerConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A502371FA8926A009FE129 /* MultiplayerConnectivityService.swift */; };
+		08A5023A1FA8927B009FE129 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A502391FA8927B009FE129 /* Utils.swift */; };
+		08A5023C1FA89288009FE129 /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5023B1FA89288009FE129 /* MathUtilities.swift */; };
+		08A502421FA892B5009FE129 /* PnPSolver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 08A502411FA892B5009FE129 /* PnPSolver.mm */; };
+		08A5026C1FA894FF009FE129 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5026B1FA894FF009FE129 /* opencv2.framework */; };
+		08A5026E1FA89DAE009FE129 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A5026D1FA89DAE009FE129 /* art.scnassets */; };
+		08A502791FA8A5C3009FE129 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A502781FA8A5C3009FE129 /* QRCode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08A5021B1FA89235009FE129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A501FE1FA89234009FE129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A502051FA89235009FE129;
+			remoteInfo = "ARKit Multiplayer";
+		};
+		08A502261FA89235009FE129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A501FE1FA89234009FE129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A502051FA89235009FE129;
+			remoteInfo = "ARKit Multiplayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A502061FA89235009FE129 /* ARKit Multiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit Multiplayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A502091FA89235009FE129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08A5020B1FA89235009FE129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08A5020E1FA89235009FE129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08A502101FA89235009FE129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08A502131FA89235009FE129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08A502151FA89235009FE129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A5021A1FA89235009FE129 /* ARKit MultiplayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit MultiplayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A5021E1FA89235009FE129 /* ARKit_MultiplayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_MultiplayerTests.swift; sourceTree = "<group>"; };
+		08A502201FA89235009FE129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A502251FA89235009FE129 /* ARKit MultiplayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit MultiplayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A502291FA89235009FE129 /* ARKit_MultiplayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_MultiplayerUITests.swift; sourceTree = "<group>"; };
+		08A5022B1FA89235009FE129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A502371FA8926A009FE129 /* MultiplayerConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerConnectivityService.swift; sourceTree = "<group>"; };
+		08A502391FA8927B009FE129 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		08A5023B1FA89288009FE129 /* MathUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
+		08A5023F1FA892B5009FE129 /* ARKit Multiplayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKit Multiplayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		08A502401FA892B5009FE129 /* PnPSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PnPSolver.h; sourceTree = "<group>"; };
+		08A502411FA892B5009FE129 /* PnPSolver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PnPSolver.mm; sourceTree = "<group>"; };
+		08A5024E1FA893F0009FE129 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		08A5024F1FA893F9009FE129 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08A502501FA89401009FE129 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		08A502511FA8940A009FE129 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		08A502521FA89413009FE129 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08A502531FA8941C009FE129 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		08A502541FA89423009FE129 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		08A502551FA8942D009FE129 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		08A502561FA89433009FE129 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		08A502571FA89438009FE129 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		08A502581FA89442009FE129 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		08A502591FA89449009FE129 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		08A5026B1FA894FF009FE129 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		08A5026D1FA89DAE009FE129 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		08A502781FA8A5C3009FE129 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08A502031FA89235009FE129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5026C1FA894FF009FE129 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A502171FA89235009FE129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A502221FA89235009FE129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A501FD1FA89234009FE129 = {
+			isa = PBXGroup;
+			children = (
+				08A502081FA89235009FE129 /* ARKit Multiplayer */,
+				08A5021D1FA89235009FE129 /* ARKit MultiplayerTests */,
+				08A502281FA89235009FE129 /* ARKit MultiplayerUITests */,
+				08A502071FA89235009FE129 /* Products */,
+				08A502471FA8932B009FE129 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08A502071FA89235009FE129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08A502061FA89235009FE129 /* ARKit Multiplayer.app */,
+				08A5021A1FA89235009FE129 /* ARKit MultiplayerTests.xctest */,
+				08A502251FA89235009FE129 /* ARKit MultiplayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08A502081FA89235009FE129 /* ARKit Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				08A502091FA89235009FE129 /* AppDelegate.swift */,
+				08A5020B1FA89235009FE129 /* ViewController.swift */,
+				08A502751FA8A427009FE129 /* SolvePNP */,
+				08A502781FA8A5C3009FE129 /* QRCode.swift */,
+				08A502391FA8927B009FE129 /* Utils.swift */,
+				08A5023B1FA89288009FE129 /* MathUtilities.swift */,
+				08A502371FA8926A009FE129 /* MultiplayerConnectivityService.swift */,
+				08A5020D1FA89235009FE129 /* Main.storyboard */,
+				08A5026D1FA89DAE009FE129 /* art.scnassets */,
+				08A502101FA89235009FE129 /* Assets.xcassets */,
+				08A502121FA89235009FE129 /* LaunchScreen.storyboard */,
+				08A502151FA89235009FE129 /* Info.plist */,
+				08A5023F1FA892B5009FE129 /* ARKit Multiplayer-Bridging-Header.h */,
+			);
+			path = "ARKit Multiplayer";
+			sourceTree = "<group>";
+		};
+		08A5021D1FA89235009FE129 /* ARKit MultiplayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				08A5021E1FA89235009FE129 /* ARKit_MultiplayerTests.swift */,
+				08A502201FA89235009FE129 /* Info.plist */,
+			);
+			path = "ARKit MultiplayerTests";
+			sourceTree = "<group>";
+		};
+		08A502281FA89235009FE129 /* ARKit MultiplayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08A502291FA89235009FE129 /* ARKit_MultiplayerUITests.swift */,
+				08A5022B1FA89235009FE129 /* Info.plist */,
+			);
+			path = "ARKit MultiplayerUITests";
+			sourceTree = "<group>";
+		};
+		08A502471FA8932B009FE129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A5026B1FA894FF009FE129 /* opencv2.framework */,
+				08A502591FA89449009FE129 /* ImageIO.framework */,
+				08A502581FA89442009FE129 /* CoreGraphics.framework */,
+				08A502571FA89438009FE129 /* CoreImage.framework */,
+				08A502561FA89433009FE129 /* CoreMedia.framework */,
+				08A502551FA8942D009FE129 /* CoreVideo.framework */,
+				08A502541FA89423009FE129 /* Accelerate.framework */,
+				08A502531FA8941C009FE129 /* AssetsLibrary.framework */,
+				08A502521FA89413009FE129 /* AVFoundation.framework */,
+				08A502511FA8940A009FE129 /* QuartzCore.framework */,
+				08A502501FA89401009FE129 /* UIKit.framework */,
+				08A5024F1FA893F9009FE129 /* Foundation.framework */,
+				08A5024E1FA893F0009FE129 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08A502751FA8A427009FE129 /* SolvePNP */ = {
+			isa = PBXGroup;
+			children = (
+				08A502401FA892B5009FE129 /* PnPSolver.h */,
+				08A502411FA892B5009FE129 /* PnPSolver.mm */,
+			);
+			path = SolvePNP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08A502051FA89235009FE129 /* ARKit Multiplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A5022E1FA89235009FE129 /* Build configuration list for PBXNativeTarget "ARKit Multiplayer" */;
+			buildPhases = (
+				08A502021FA89235009FE129 /* Sources */,
+				08A502031FA89235009FE129 /* Frameworks */,
+				08A502041FA89235009FE129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARKit Multiplayer";
+			productName = "ARKit Multiplayer";
+			productReference = 08A502061FA89235009FE129 /* ARKit Multiplayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08A502191FA89235009FE129 /* ARKit MultiplayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A502311FA89235009FE129 /* Build configuration list for PBXNativeTarget "ARKit MultiplayerTests" */;
+			buildPhases = (
+				08A502161FA89235009FE129 /* Sources */,
+				08A502171FA89235009FE129 /* Frameworks */,
+				08A502181FA89235009FE129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A5021C1FA89235009FE129 /* PBXTargetDependency */,
+			);
+			name = "ARKit MultiplayerTests";
+			productName = "ARKit MultiplayerTests";
+			productReference = 08A5021A1FA89235009FE129 /* ARKit MultiplayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08A502241FA89235009FE129 /* ARKit MultiplayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A502341FA89235009FE129 /* Build configuration list for PBXNativeTarget "ARKit MultiplayerUITests" */;
+			buildPhases = (
+				08A502211FA89235009FE129 /* Sources */,
+				08A502221FA89235009FE129 /* Frameworks */,
+				08A502231FA89235009FE129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A502271FA89235009FE129 /* PBXTargetDependency */,
+			);
+			name = "ARKit MultiplayerUITests";
+			productName = "ARKit MultiplayerUITests";
+			productReference = 08A502251FA89235009FE129 /* ARKit MultiplayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08A501FE1FA89234009FE129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Eugene Bokhan";
+				TargetAttributes = {
+					08A502051FA89235009FE129 = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					08A502191FA89235009FE129 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08A502051FA89235009FE129;
+					};
+					08A502241FA89235009FE129 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08A502051FA89235009FE129;
+					};
+				};
+			};
+			buildConfigurationList = 08A502011FA89234009FE129 /* Build configuration list for PBXProject "ARKit Multiplayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08A501FD1FA89234009FE129;
+			productRefGroup = 08A502071FA89235009FE129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08A502051FA89235009FE129 /* ARKit Multiplayer */,
+				08A502191FA89235009FE129 /* ARKit MultiplayerTests */,
+				08A502241FA89235009FE129 /* ARKit MultiplayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08A502041FA89235009FE129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A502141FA89235009FE129 /* LaunchScreen.storyboard in Resources */,
+				08A5026E1FA89DAE009FE129 /* art.scnassets in Resources */,
+				08A502111FA89235009FE129 /* Assets.xcassets in Resources */,
+				08A5020F1FA89235009FE129 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A502181FA89235009FE129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A502231FA89235009FE129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A502021FA89235009FE129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A502791FA8A5C3009FE129 /* QRCode.swift in Sources */,
+				08A5020C1FA89235009FE129 /* ViewController.swift in Sources */,
+				08A502381FA8926A009FE129 /* MultiplayerConnectivityService.swift in Sources */,
+				08A5023A1FA8927B009FE129 /* Utils.swift in Sources */,
+				08A502421FA892B5009FE129 /* PnPSolver.mm in Sources */,
+				08A5020A1FA89235009FE129 /* AppDelegate.swift in Sources */,
+				08A5023C1FA89288009FE129 /* MathUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A502161FA89235009FE129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5021F1FA89235009FE129 /* ARKit_MultiplayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A502211FA89235009FE129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A5022A1FA89235009FE129 /* ARKit_MultiplayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08A5021C1FA89235009FE129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A502051FA89235009FE129 /* ARKit Multiplayer */;
+			targetProxy = 08A5021B1FA89235009FE129 /* PBXContainerItemProxy */;
+		};
+		08A502271FA89235009FE129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A502051FA89235009FE129 /* ARKit Multiplayer */;
+			targetProxy = 08A502261FA89235009FE129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08A5020D1FA89235009FE129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A5020E1FA89235009FE129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08A502121FA89235009FE129 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A502131FA89235009FE129 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08A5022C1FA89235009FE129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08A5022D1FA89235009FE129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08A5022F1FA89235009FE129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWFG5BQAVT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ARKit\\ Multiplayer",
+				);
+				INFOPLIST_FILE = "ARKit Multiplayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.ARKit-Multiplayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKit Multiplayer/ARKit Multiplayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08A502301FA89235009FE129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWFG5BQAVT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ARKit\\ Multiplayer",
+				);
+				INFOPLIST_FILE = "ARKit Multiplayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.ARKit-Multiplayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARKit Multiplayer/ARKit Multiplayer-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08A502321FA89235009FE129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWFG5BQAVT;
+				INFOPLIST_FILE = "ARKit MultiplayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.ARKit-MultiplayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKit Multiplayer.app/ARKit Multiplayer";
+			};
+			name = Debug;
+		};
+		08A502331FA89235009FE129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWFG5BQAVT;
+				INFOPLIST_FILE = "ARKit MultiplayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.ARKit-MultiplayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKit Multiplayer.app/ARKit Multiplayer";
+			};
+			name = Release;
+		};
+		08A502351FA89235009FE129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWFG5BQAVT;
+				INFOPLIST_FILE = "ARKit MultiplayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.ARKit-MultiplayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARKit Multiplayer";
+			};
+			name = Debug;
+		};
+		08A502361FA89235009FE129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VWFG5BQAVT;
+				INFOPLIST_FILE = "ARKit MultiplayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.ARKit-MultiplayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARKit Multiplayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08A502011FA89234009FE129 /* Build configuration list for PBXProject "ARKit Multiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A5022C1FA89235009FE129 /* Debug */,
+				08A5022D1FA89235009FE129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A5022E1FA89235009FE129 /* Build configuration list for PBXNativeTarget "ARKit Multiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A5022F1FA89235009FE129 /* Debug */,
+				08A502301FA89235009FE129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A502311FA89235009FE129 /* Build configuration list for PBXNativeTarget "ARKit MultiplayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A502321FA89235009FE129 /* Debug */,
+				08A502331FA89235009FE129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A502341FA89235009FE129 /* Build configuration list for PBXNativeTarget "ARKit MultiplayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A502351FA89235009FE129 /* Debug */,
+				08A502361FA89235009FE129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08A501FE1FA89234009FE129 /* Project object */;
+}
