@@ -54,7 +54,7 @@ To use this project you need to print a 10-sm QR. There's a small [`QR Generator
     <img src="/Media/QR Generator.png", width="480">
 </p>
 
-## 3. Licence
+## Licence
 
 The source code is released under [GPLv3](http://www.gnu.org/licenses/) licence.
 
